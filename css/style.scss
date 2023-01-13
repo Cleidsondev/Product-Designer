@@ -724,6 +724,10 @@ color: #1976D2;
 
 @media screen and (max-width: 480px)
 {
+    
+      body, html {
+    overflow-x: hidden !important;
+    }
 
   #main_sobre {
     .card_sobre {
