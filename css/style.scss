@@ -36,8 +36,9 @@ a {
 body {
   background-color: rgb(226, 226, 226);
 
+
       font-family: 'Montserrat', sans-serif;
-        overflow-x: hidden;
+
 }
 
 .hamburger-menu {
@@ -105,7 +106,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px 20px;
+    padding: 20px;
 
 
 
@@ -663,7 +664,6 @@ color: #1976D2;
     #main_sobre {
       margin-bottom: 35em;
       height: 100vh;
-      background-color: rgb(255, 255, 255);
       .card_sobre{
         display: grid;
         .img_main {
@@ -725,24 +725,34 @@ color: #1976D2;
 @media screen and (max-width: 480px)
 {
 
+  body, html {
+    overflow-x: hidden !important;
+    }
+
   #main_sobre {
     .card_sobre {
+      
       .sobre {
         width: fill;
+        
       }
     }
   }
 
+
   #container__nav {
-    padding: 0;
+     padding: 0;
+     width: 100%;
+    
     .nav__bar {
-      width: 100%;
+      width: fill;
       a {
         color: white;
       }
     }
   }
   .apr {
+    
     .buttons {
       justify-content: center;
       align-items: center;
@@ -751,6 +761,7 @@ color: #1976D2;
   }
 
     #main_skills {
+
       margin-bottom: 10rem;
       height: 120vh;
       .title {
@@ -759,8 +770,10 @@ color: #1976D2;
       }
     }
 
+
   #contact {
     margin-bottom: 15rem;
+    
   }
   .contact-container {
     
