@@ -37,7 +37,6 @@ a {
 body {
   background-color: rgb(226, 226, 226);
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
 }
 
 .hamburger-menu {
@@ -86,7 +85,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px 20px;
+  padding: 20px;
 }
 #main__apr .perfil {
   height: 20rem;
@@ -564,7 +563,6 @@ body {
   #main_sobre {
     margin-bottom: 35em;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
   }
   #main_sobre .card_sobre {
     display: grid;
@@ -618,6 +616,9 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  body, html {
+    overflow-x: hidden !important;
+  }
   #main_sobre .card_sobre .sobre {
     width: -webkit-fill-available;
     width: -moz-available;
@@ -625,9 +626,12 @@ body {
   }
   #container__nav {
     padding: 0;
+    width: 100%;
   }
   #container__nav .nav__bar {
-    width: 100%;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill;
   }
   #container__nav .nav__bar a {
     color: white;
